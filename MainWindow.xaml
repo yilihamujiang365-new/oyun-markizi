@@ -1,0 +1,40 @@
+﻿<Window
+    x:Class="oyunmarkizi.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:oyunmarkizi"
+    Title="MainWindow"
+    Width="1024"
+    Height="768"
+    WindowState="Maximized"
+    WindowStyle="None">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <!--  ListBox with Virtualization  -->
+        <ListBox
+            x:Name="swflistbox"
+            Grid.Column="0"
+            VirtualizingStackPanel.IsVirtualizing="True"
+            VirtualizingStackPanel.VirtualizationMode="Recycling">
+            <!--  Your ListBox items here  -->
+        </ListBox>
+
+        <!--  WebBrowser for Flash content  -->
+        <WebBrowser Name="webBrowser" Grid.Column="1" />
+        <!--  Close Button  -->
+        <Button
+            x:Name="CloseButton"
+            Width="30"
+            Height="30"
+            Margin="10"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            Click="CloseButton_Click"
+            Content="X" />
+    </Grid>
+</Window>
