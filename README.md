@@ -1,3 +1,4 @@
 # oyun markizi
 
-### Flash游戏运行，先安装Flash Player插件
+
+### Flash脫脦脧路脭脣脨脨拢卢脧脠掳虏脳掳Flash Player虏氓录镁
